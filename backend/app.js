@@ -15,6 +15,11 @@ app.use(cors({
     origin:[process.env.FRONTEND_URL,"http://localhost:3000"],
 }));
 
+app.get("/", (req, res, next) => {
+    res.send("Working");
+  });
+
+  
 app.use("/api/v1", userRouter);
 
 // app.use(express.static(path.resolve("./frontend/build")));
