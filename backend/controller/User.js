@@ -74,7 +74,7 @@ export const getUser = async (req, res) => {
 
 export const myProfile = async (req, res) => {
   try {
-    const user = await User.findone();
+    const user = await User.findOne();
 
     res.status(200).json({
       success: true,
