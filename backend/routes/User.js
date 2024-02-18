@@ -23,7 +23,7 @@ userRouter.route("/logout").get(logout);
 
 userRouter.route("/user").get(getUser);
 
-userRouter.route("/me").get( myProfile);
+userRouter.route("/me").get(isAuthenticated, myProfile);
 
 userRouter.route("/admin/update").put(updateUser);
 
