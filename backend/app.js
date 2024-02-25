@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use(cors({
     Credentials:true,
     methods:["GET","POST","PUT","DELETE"],
-    origin:["https://portfolio-jdbkcoaa5-saikirannarawad.vercel.app","http://localhost:3000","https://portfolio-saikirannarawad.vercel.app/"],
+    origin:["https://portfolio-jdbkcoaa5-saikirannarawad.vercel.app","http://localhost:3000","https://portfolio-saikirannarawad.vercel.app"],
 }));
 
 app.get("/", (req, res, next) => {
